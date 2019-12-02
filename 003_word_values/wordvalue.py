@@ -14,7 +14,9 @@ LETTER_SCORES = {letter: score for score, letters in scrabble_scores
 
 def load_words():
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
-    pass
+    DICTIONARY = "dictionary.txt"
+    scrabble_dict = urllib.request.urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
+    return list(scrabble_dict)
 
 
 def calc_word_value(word):
@@ -25,3 +27,6 @@ def calc_word_value(word):
 def max_word_value(words):
     """Given a list of words calculate the word with the maximum value and return it"""
     pass
+
+
+print(load_words())
