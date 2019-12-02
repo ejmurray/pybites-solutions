@@ -1,5 +1,3 @@
-import pytest
-
 from regex_pybites import extract_course_times, get_all_hashtags_and_links, match_first_paragraph
 
 
