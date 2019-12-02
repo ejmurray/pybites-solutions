@@ -11,7 +11,7 @@ LETTER_SCORES = {letter: score for score, letters in scrabble_scores
 
 
 # start coding
-
+# [Download file from web in Python 3 - Stack Overflow](https://stackoverflow.com/questions/7243750/download-file-from-web-in-python-3)
 def load_words():
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
     DICTIONARY = "dictionary.txt"
